@@ -49,7 +49,7 @@
 									<span class="left-hero__descr">Ближайшая отправка 10.10</span>
 								</div>
 							</div>
-							<a href="" class="left-hero__link">Все тарифы</a>
+							<a href="#calc" class="left-hero__link pl">Все тарифы</a>
 						</div>
 						<div class="hero__right right-hero">
 							<div class="right-hero__body">
@@ -202,9 +202,9 @@
 				<div class="documents__body">
 					<h2 class="documents__title title">список документов необходимых для отправки груза</h2>
 					<ul class="documents__row">
-						<li class="documents__item">Общая информация</li>
-						<li class="documents__item">Доверенность на передачу груза экспедитору</li>
-						<li class="documents__item">Опись вложений в груз</li>
+						<li class="documents__item"><a href="">Общая информация</a></li>
+						<li class="documents__item"><a href="">Доверенность на передачу груза экспедитору</a></li>
+						<li class="documents__item"><a href="">Опись вложений в груз</a></li>
 					</ul>
 				</div>
 			</div>
@@ -243,7 +243,7 @@
 									Иловайская, д.3, цех 7</address>
 							</div>
 						</div>
-						<div class="maps__map"></div>
+						<div class="maps__map" id="map"></div>
 					</div>
 					<div class="maps__item">
 						<div class="maps__top top-maps">
@@ -252,7 +252,7 @@
 									переулок 12</address>
 							</div>
 						</div>
-						<div class="maps__map"></div>
+						<div class="maps__map" id="map1"></div>
 					</div>
 				</div>
 			</div>
@@ -399,8 +399,30 @@
 		</section>
 <footer class="footer">
 	<!-- Подвал -->
-</footer>	</div>
+</footer><div class="popup popup-calc">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+				<div class="popup-close"></div>
+				<h2 class="popup__title">Рассчитать стоимость
+					перевозки</h2>
+				<form action="#" class="popup__form">
+					<div class="popup__item">
+						<input autocomplete='off' type='text' name='form[]' data-value='Имя' class='input'>
+					</div>
+					<div class="popup__item">
+						<input autocomplete='off' type='text' name='form[]' data-value='Телефон' class='input'>
+					</div>
+					<button class="popup__btn btn">Получить точный расчет</button>
+					<p class="popup__text">Нажимая на кнопку, Вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>	</div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU" type="text/javascript"></script>
 <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
 <script src="js/vendors.js"></script>
 <script src="js/main.js"></script></body>
