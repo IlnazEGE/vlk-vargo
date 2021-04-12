@@ -167,6 +167,11 @@ body.lock {
 	border-radius: 10px;
 	color: #ffffff;
 }
+.btn:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#eb8316), color-stop(47.19%, #eb8316), color-stop(50.83%, #fea812), to(#fea812));
+	background: -o-linear-gradient(top, #eb8316 0%, #eb8316 47.19%, #fea812 50.83%, #fea812 100%);
+	background: linear-gradient(180deg, #eb8316 0%, #eb8316 47.19%, #fea812 50.83%, #fea812 100%);
+}
 .btn.fw {
 	width: 100%;
 }
